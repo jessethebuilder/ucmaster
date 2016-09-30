@@ -1,0 +1,47 @@
+<html>
+<head>
+  <!-- Load utility scripts here. This order is important -->
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/demo_styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <form id="contact_form">
+          <div class="form-group">
+            <label for="first_name" class="control-label">First Name</label>
+            <input type="text" id="first_name" required="required" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="last_name" class="control-label">Last Name</label>
+            <input type="text" id="last_name" required="required" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="email" class="control-label">Email</label>
+            <input type="email" id="email" required="required" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="phone" class="control-label">Phone</label>
+            <input type="tel" id="phone" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="GO" class="btn btn-primary" id="submit_contact_form">
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <div id="form_fields_target">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load custom scripts here, AFTER utility scripts and AFTER the dom
+       has loaded -->
+  <script type="text/javascript" src="js/demo_scripts.js"></script>
+</body>
+</html>
